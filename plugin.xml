@@ -30,10 +30,12 @@
   <platform name="android">
 
     <!-- these give a lot of peeps trouble, esp on build.phonegap.com, so not using them -->
-    <!--<framework src="com.google.android.gms:play-services-plus:+" />
-    <framework src="com.google.android.gms:play-services-identity:+" /> -->
-    <dependency id="cordova-plugin-googleplayservices" />
-
+    <framework src="com.google.android.gms:play-services-plus:+" />
+    <framework src="com.google.android.gms:play-services-identity:+" />
+    <framework src="com.google.android.gms:play-services-auth:+" />
+  
+<!--     <dependency id="cordova-plugin-googleplayservices" />
+ -->
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="GooglePlus">
         <param name="android-package" value="nl.xservices.plugins.GooglePlus" />
